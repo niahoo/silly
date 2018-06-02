@@ -62,7 +62,7 @@ class MyApplication extends Silly\Edition\PhpDi\Application
 {
     protected function createContainer()
     {
-        $builder = ContainerBuilder::buildDevContainer();
+        $builder = new DI\ContainerBuilder();
         
         $builder->addDefinitions([
             // add your PHP-DI config here
